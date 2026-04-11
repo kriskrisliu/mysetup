@@ -2,10 +2,10 @@
 set -e
 
 echo "==> Updating apt..."
-sudo apt update
+apt update
 
 echo "==> Installing zsh and nano..."
-sudo apt install -y zsh nano curl git
+apt install -y zsh nano curl git
 
 if command -v conda >/dev/null 2>&1; then
     echo "==> Initializing conda for zsh..."
@@ -68,7 +68,7 @@ fi
 
 echo "==> Setting zsh as default shell..."
 if command -v chsh >/dev/null 2>&1; then
-    sudo chsh -s "$(command -v zsh)" "$USER" || true
+    chsh -s "$(command -v zsh)" "$USER" || true
 fi
 
 echo "==> Done!"
