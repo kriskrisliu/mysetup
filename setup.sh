@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-
+export http_proxy=http://localhost:7890 && export https_proxy=http://localhost:7890
 KEY='ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDObLUKOV4pbl9ILvShiDpcpxAai8aigfv5SA13CeDvuGmzZwCJVPIUGlV9SKurbI3MtKb4/Dk45Mm7BbEjvCaQfCrsXZEwAbv3uZBrVeFOfAkWnkmYLDad7fGUE3DQp++3e/D1mjZ6///L2eO/8sUaFNKob1h20vFE6LXMVjoUo317DL/d9Sfy+3gL6Air23c2js+kZaMMfcrBySMufLhBgCkqSuv1zapfuVUZjeFmVwlhgPBMb+51BeH9FaYXjTcbcwkICN8CJJHBFLoatj1gdVfrhxS2qiwtMkqDj+H4gEoNZ1G9PNiOagrbuimg3buJDz6ADpFd4n2yuwL5OHMrW4Saqc9tTYAi9BisAGzym5ndsNVuiB04OiWYcfvxWKPjQbd3cT0/M+LBhRCddNWw18+NYsnfyzwTQpJ7mJBsVpjTv4LGgAShybk2/uE9dLlb6ZWcDSpjXpUjc0M4T3fo/SA78hNugmVEOseA9kZemuMvRV5oaPumSzHRGsTdrUc= 86158@KrisLiu'
 
 install_oh_my_zsh() {
